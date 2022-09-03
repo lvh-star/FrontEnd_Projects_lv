@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .clearfix{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div{
+            width: 600px;
+            height: 260px;
+            border: solid 2px #ccc;
+            margin: 100px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        ul{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1000000px;
+        }
+        li{
+            width: 600px;
+            height: 260px;
+            float: left;
+        }
+        img{
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="clearfix">
+            <li id="first">
+                <a href="">
+                    <img src="./img/img1.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img2.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img3.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img4.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img/img5.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        let ul = document.getElementsByTagName("ul")[0];
+        let pos = 600;
+        let timer = setInterval(function (){
+            liFirst = ul.firstElementChild;
+            liLast = ul.lastElementChild;
+            liFirst.style.marginLeft = "0px";
+            let speed = -1;
+            let timer2 = setInterval(function(){
+                speed += speed/50;
+                liFirst.style.marginLeft = parseInt(window.getComputedStyle(liFirst, null)["marginLeft"]) + speed + "px";
+                if(-parseInt(window.getComputedStyle(liFirst, null)["marginLeft"]) > pos){
+                    clearInterval(timer2);
+                    ul.appendChild(liFirst);
+                    liLast.style.marginLeft = "0px";
+                }
+            }, 1);
+        }, 3000);
+    </script>
+</body>
+</html>

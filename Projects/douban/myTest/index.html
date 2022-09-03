@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆瓣</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_3595425_p2r5c573vks.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <h1>
+                    <a href="./index.html" class="logo" target="_self">豆瓣</a>
+                </h1> 
+            </div>
+            <nav>
+                <div class="nav-inner">
+                    <div class="nav-items">
+                        <ul>
+                            <li>
+                                <a href="https://book.douban.com" class="db-book">豆瓣读书</a>
+                            </li>
+                            <li>
+                                <a href="https://movie.douban.com" class="db-movie">豆瓣电影</a>
+                            </li>
+                            <li>
+                                <a href="https://music.douban.com" class="db-music">豆瓣音乐</a>
+                            </li>
+                            <li>
+                                <a href="https://www.douban.com/location" class="db-comcity">豆瓣同城</a>
+                            </li>
+                            <li>
+                                <a href="https://www.douban.com/group" class="db-group">豆瓣小组</a>
+                            </li>
+                            <li>
+                                <a href="https://read.douban.com" class="db-read">豆瓣阅读</a>
+                            </li>
+                            <li>
+                                <a href="https://douban.fm" class="db-FM">豆瓣FM</a>
+                            </li>
+                            <li>
+                                <a href="https://time.douban.com/?dt_time_source=douban-web_anonymous_index_top_nav" class="db-time">豆瓣时间</a>
+                            </li>
+                            <li>
+                                <a href="https://market.douban.com/?utm_campaign=anonymous_top_nav&utm_source=douban&utm_medium=pc_web/" class="db-doupin">豆瓣豆品</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title">豆瓣网</div>
+                    <div class="search">
+                        <span class="inp">
+                            <input type="text" placeholder="书籍、电影、音乐、小组、小站、成员">
+                        </span>
+                        <span class="btn">
+                            <input type="submit" value="搜索">
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="login">
+            <div class="login-container">
+                <div class="login-app">
+                    <div class="login-app-body">
+                        <div class="login-app-nav clearfix">
+                            <div class="sms-login">
+                                <a href="">短信登录/注册</a>
+                            </div>
+                            <div class="password-login">
+                                <a href="">密码登录</a>
+                            </div>
+                        </div>
+                        <div class="tips">
+                            <span>
+                                请仔细阅读
+                                <a target="_blank" href="https://accounts.douban.com/passport/agreement">豆瓣使用协议、豆瓣个人信息保护政策</a>
+                            </span>
+                        </div>
+                        <div class="login-int">
+                            <div class="int-tele">
+                                <div class="tele-header">+86</div>
+                                <input type="text" maxlength="13" placeholder="手机号">
+                            </div>
+                            <div class="int-passcode">
+                                <input type="text" placeholder="验证码">
+                                <input type="submit" value="获得验证码">
+                            </div>
+                        </div>
+                        <div class="login-btn">
+                            <input type="submit" value="登录豆瓣">
+                        </div>
+                        <div class="other-item">
+                            <a href="">收不到验证码</a>
+                        </div>
+                        <div class="other-ways-to-login">
+                            <span>第三方登录</span>
+                            <a href="" class="weixin" title="用微信登录">
+                                <span>微信</span>
+                                <i class="iconfont icon-weixin"></i>
+                            </a>
+                            <a href="" class="weibo" title="用微博登录">
+                                <span>微博</span>
+                                <i class="iconfont icon-weibo"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="QR-code">
+                        <a href="" class="QR">二维码</a>
+                        <div class="tip">扫码登陆</div>
+                    </div>
+                </div>
+                <div class="app-download">
+                    <div class="app-name">豆瓣 7.0</div>
+                    <div class="dowload-link">
+                        <div class="link-btn">
+                            <a href="">下载豆瓣 App</a>
+                        </div>
+                        <div class="link-QRlogo">
+                            <a href="">
+                                <img src="./img/icon_qrcode_green.png" alt="">
+                            </a>
+                            <div class="link-QR">
+                                <img src="./img/doubanapp_qrcode.png" alt="">
+                                <span>iSO / Android 扫码直接下载</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="poster"></div>
+            </div>
+        </div>
+
+        <div class="contain-main">
+            <div class="hot clearfix">
+                <div class="hot-content clearfix">
+                    <h2 class="content-title hot-h2">
+                        <span class="title">热点内容</span>
+                        <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                        <span class="additional">
+                            (
+                            <a href="">更多</a>
+                            )
+                        </span>
+                    </h2>
+                    <div class="post">
+                        <ul>
+                            <li id="post1">
+                                <a class="pic" href="">
+                                    <img src="./img/hot-content-pic1.webp" alt="">
+                                </a>
+                                <a class="pic-title" href="">月亮在天上摇摇晃晃</a>
+                                <span>63张照片</span>
+                            </li>
+                            <li id="post2">
+                                <a class="pic" href="">
+                                    <img src="./img/hot-content-pic2.webp" alt="">
+                                </a>
+                                <a class="pic-title" href="">剪纸绘本 （3）</a>
+                                <span>21张照片</span>
+                            </li>
+                            <li id="post3">
+                                <a class="pic" href="">
+                                    <img src="./img/hot-content-pic3.webp" alt="">
+                                </a>
+                                <a class="pic-title" href="">阅微草堂笔记</a>
+                                <span>10张照片</span>
+                            </li>
+                            <li id="post4">
+                                <a class="pic" href="">
+                                    <img src="./img/hot-content-pic4.webp" alt="">
+                                </a>
+                                <a class="pic-title" href="">不能进入的历史</a>
+                                <span>19张照片</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="post-content">
+                        <ul>
+                            <li class="first">
+                                <a href="">
+                                    一名平凡读者的买书总结
+                                </a>
+                                <div class="author">JrKgRn的日记</div>
+                                <p>
+                                    从小家教比较严格，高中之前几乎杜绝了一切电子产品，没有手机，也没有电脑，去同学家玩还要胆战心惊。好处是读书几乎成为了唯一的娱乐，买书从来不会被限制，坏处是，小镇...
+                                </p>
+                            </li>
+                            <li>
+                                <a href="">
+                                    男友为我过生日没花一分钱，该不该分手？
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    根据真实案件改编的悬疑小说：死去的人，真的会为了复仇而活过来吗
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    叶芝和他的拜占庭诗篇
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    论家庭关系里好好说话的重要性
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    媒介蒙太奇 之 观看奥运
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    两个月108公里，业余游泳爱好者路在何方
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    实习记者的一天
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hot-topic">
+                    <h2 class="content-title hot-h2">
+                        <span class="title">热点话题</span>
+                        <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                        <span class="additional">
+                            (
+                            <a href="">去话题广场</a>
+                            )
+                        </span>
+                    </h2>
+                    <div class="topic-title">
+                        <ul>
+                            <li>
+                                <a href="">那些你吃了很多年的老店铺</a>
+                                <div class="liulanliang">16.6万次浏览</div>
+                            </li>
+                            <li>
+                                <a href="">那些你爱吃的绿叶蔬菜</a>
+                                <div class="liulanliang">210.4万次浏览</div>
+                            </li>
+                            <li>
+                                <a href="">你接触过的殡葬行业从业者们</a>
+                                <div class="liulanliang">1.9万次浏览</div>
+                            </li>
+                            <li>
+                                 <a href="">我家有个支架俱乐部</a>
+                                <div class="liulanliang">4302次浏览</div>
+                            </li>
+                            <li>
+                                 <a href="">我的植物们安然过夏了</a>
+                                <div class="liulanliang">1.6万次浏览</div>
+                            </li>
+                            <li>
+                                 <a href="">办公区里的小动物们</a>
+                                <div class="liulanliang">1.6万次浏览</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-container">
+                    <div class="wrapper db-time clearfix">
+                        <aside class="left-aside">
+                            <h2 class="section-title">
+                                <a href="">豆瓣时间</a>
+                            </h2>
+                        </aside>
+                        <div class="main">
+                            <h2 class="content-title">
+                                <span class="title">热门专栏</span>
+                                <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                <span class="additional">
+                                    (
+                                    <a href="">更多</a>
+                                    )
+                                </span>
+                            </h2>
+                            <div class="time-list">
+                                <ul class="clearfix">
+                                    <li>
+                                        <a class="img" href="">
+                                            <img src="./img/db_time/item1.png" alt="">
+                                        </a>
+                                        <a class="li-title" href="">奇异植物博物馆——揭秘植物背后不为人知的一面</a>
+                                        <div class="type">音频专栏</div>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="">
+                                            <img src="./img/db_time/item2.jpg" alt="">
+                                        </a>
+                                        <a class="li-title" href="">抚平时光伤痕——走出PTSD的30堂创伤修复课</a>
+                                        <div class="type">音频专栏</div>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="">
+                                            <img src="./img/db_time/item3.png" alt="">
+                                        </a>
+                                        <a class="li-title" href="">葛剑雄讲中国史——50个关键词复原历史真相</a>
+                                        <div class="type">音频专栏</div>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="">
+                                            <img src="./img/db_time/item4.jpg" alt="">
+                                        </a>
+                                        <a class="li-title" href="">文学的庙堂与江湖——传说中的水浒</a>
+                                        <div class="type">音频专栏</div>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="">
+                                            <img src="./img/db_time/item5.jpg" alt="">
+                                        </a>
+                                        <a class="li-title" href="">疗愈你内在的小孩——人人都可以听的心理成长课</a>
+                                        <div class="type">音频专栏</div>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="">
+                                            <img src="./img/db_time/item6.jpg" alt="">
+                                        </a>
+                                        <a class="li-title" href="">走出单一思维的陷阱——人类思维18讲</a>
+                                        <div class="type">音频专栏</div>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="">
+                                            <img src="./img/db_time/item7.jpg" alt="">
+                                        </a>
+                                        <a class="li-title" href="">在故宫发现中国之美——5位故宫专家带你走进珍藏国宝</a>
+                                        <div class="type">音频专栏</div>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="">
+                                            <img src="./img/db_time/item8.jpg" alt="">
+                                        </a>
+                                        <a class="li-title" href="">艺术的诞生——极简西方艺术史60讲</a>
+                                        <div class="type">音频专栏</div>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="">
+                                            <img src="./img/db_time/item9.jpg" alt="">
+                                        </a>
+                                        <a class="li-title" href="">像聪明人一样思考——24堂思维导图课</a>
+                                        <div class="type">音频专栏</div>
+                                    </li>
+                                    <li>
+                                        <a class="img" href="">
+                                            <img src="./img/db_time/item10.jpg" alt="">
+                                        </a>
+                                        <a class="li-title" href="">睡个好觉——21天彻底干掉失眠</a>
+                                        <div class="type">音频专栏</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <div class="wrapper db-movie clearfix">
+                        <aside class="left-aside">
+                            <h2 class="section-title">
+                                <a href="">电影</a>
+                            </h2>
+                            <ul class="aside-nav">
+                                <li>
+                                    <a href="">影讯&购票</a>
+                                </li>
+                                <li class="new">
+                                    <a href="">选电影</a>
+                                </li>
+                                <li>
+                                    <a href="">电视剧</a>
+                                </li>
+                                <li>
+                                    <a href="">排行榜</a>
+                                </li>
+                                <li>
+                                    <a href="">分类</a>
+                                </li>
+                                <li>
+                                    <a href="">影评</a>
+                                </li>
+                                <li>
+                                    <a href="">预告片</a>
+                                </li>
+                                <li>
+                                    <a href="">问答</a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="right-aside">
+                            <div class="mod">
+                                <h2 class="content-title">
+                                    <span class="title">影片分类</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span>
+                                </h2>
+                                <ul class="type-items clearfix">
+                                    <li><a href="">爱情</a></li>
+                                    <li><a href="">剧情</a></li>
+                                    <li><a href="">喜剧</a></li>
+                                    <li><a href="">悬疑</a></li>
+                                    <li><a href="">经典</a></li>
+                                    <li><a href="">动画</a></li>
+                                    <li><a href="">科幻</a></li>
+                                    <li><a href="">犯罪</a></li>
+                                    <li><a href="">动作</a></li>
+                                    <li><a href="">青春</a></li>
+                                    <li><a href="">搞笑</a></li>
+                                    <li><a href="">文艺</a></li>
+                                    <li><a href="">惊悚</a></li>
+                                    <li><a href="">励志</a></li>
+                                    <li><a href="">纪录片</a></li>
+                                    <li><a href="">黑色幽默</a></li>
+                                    <li><a href="">战争</a></li>
+                                    <li><a href="">家庭</a></li>
+                                    <li><a href="">美国</a></li>
+                                    <li><a href="">日本</a></li>
+                                    <li><a href="">香港</a></li>
+                                    <li><a href="">中国大陆</a></li>
+                                    <li><a href="">韩国</a></li>
+                                    <li><a href="">中国</a></li>
+                                    <li><a href="">英国</a></li>
+                                    <li><a href="">法国</a></li>
+                                    <li><a href="">台湾</a></li>
+                                    <li><a href="">印度</a></li>
+                                </ul>
+                            </div>
+                            <div class="mod">
+                                <h2 class="content-title">
+                                    <span class="title">近期热门</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span>
+                                </h2>
+                                <ul class="hot-items">
+                                    <li>
+                                        <span>1.&nbsp;</span>
+                                        <a href="">分手的决心</a>
+                                    </li>
+                                    <li>
+                                        <span>2.&nbsp;</span>
+                                        <a href="">壮志凌云2：独行侠</a>
+                                    </li>
+                                    <li>
+                                        <span>3.&nbsp;</span>
+                                        <a href="">日班猎人</a>
+                                    </li>
+                                    <li>
+                                        <span>4.&nbsp;</span>
+                                        <a href="">十三条命</a>
+                                    </li>
+                                    <li>
+                                        <span>5.&nbsp;</span>
+                                        <a href="">铁血战士：猎物</a>
+                                    </li>
+                                    <li>
+                                        <span>6.&nbsp;</span>
+                                        <a href="">祝你好运</a>
+                                    </li>
+                                    <li>
+                                        <span>7.&nbsp;</span>
+                                        <a href="">全职</a>
+                                    </li>
+                                    <li>
+                                        <span>8.&nbsp;</span>
+                                        <a href="">猫王</a>
+                                    </li>
+                                    <li>
+                                        <span>9.&nbsp;</span>
+                                        <a href="">掮客</a>
+                                    </li>
+                                    <li>
+                                        <span>10.&nbsp;</span>
+                                        <a href="">救命卡特</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <div class="main">
+                            <h2 class="content-title">
+                                <span class="title">正在热映</span>
+                                <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                <span class="additional">
+                                    (
+                                    <a href="">更多</a>
+                                    )
+                                </span>
+                            </h2>
+                            <ul class="main-items clearfix">
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_movie/movie1.webp" alt="">
+                                    </a>
+                                    <div class="movie-title"><a href="">新神榜：杨戬</a></div>
+                                    <div class="score">
+                                        <div class="stars mov1"></div>
+                                        <span>7.0</span>
+                                    </div>
+                                    <a href="" class="buy">选座购票</a>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_movie/movie2.webp" alt="">
+                                    </a>
+                                    <div class="movie-title"><a>雀斑公主</a></div>
+                                    <div class="score">
+                                        <div class="stars mov2"></div>
+                                        <span>6.2</span>
+                                    </div>
+                                    <a href="" class="buy">选座购票</a>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_movie/movie3.webp" alt="">
+                                    </a>
+                                    <div class="movie-title"><a>隐入尘烟</a></div>
+                                    <div class="score">
+                                        <div class="stars mov3"></div>
+                                        <span>8.5</span>
+                                    </div>
+                                    <a href="" class="buy">选座购票</a>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_movie/movie4.webp" alt="">
+                                    </a>
+                                    <div class="movie-title"><a>小黄人大眼萌：神偷奶爸前传 Minions: The Rise of Gru</a></div>
+                                    <div class="score">
+                                        <div class="stars mov4"></div>
+                                        <span>7.1</span>
+                                    </div>
+                                    <a href="" class="buy">选座购票</a>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_movie/movie5.webp" alt="">
+                                    </a>
+                                    <div class="movie-title"><a>760号犯人</a></div>
+                                    <div class="score">
+                                        <div class="stars mov5"></div>
+                                        <span>7.3</span>
+                                    </div>
+                                    <a href="" class="buy">选座购票</a>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_movie/movie6.webp" alt="">
+                                    </a>
+                                    <div class="movie-title"><a>明日战记</a></div>
+                                    <div class="score">
+                                        <div class="stars mov6"></div>
+                                        <span>6.4</span>
+                                    </div>
+                                    <a href="" class="buy">选座购票</a>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_movie/movie7.webp" alt="">
+                                    </a>
+                                    <div class="movie-title"><a>忠犬帕尔玛</a></div>
+                                    <div class="score">
+                                        <div class="stars mov7"></div>
+                                        <span>7.3</span>
+                                    </div>
+                                    <a href="" class="buy">选座购票</a>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_movie/movie8.webp" alt="">
+                                    </a>
+                                    <div class="movie-title"><a>独行月球</a></div>
+                                    <div class="score">
+                                        <div class="stars mov8"></div>
+                                        <span>7.0</span>
+                                    </div>
+                                    <a href="" class="buy">选座购票</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <div class="wrapper db-group clearfix">
+                        <aside class="left-aside">
+                            <h2 class="section-title">
+                                <a href="">小组</a>
+                            </h2>
+                            <ul class="aside-nav">
+                                <li>
+                                    <a href="">精选</a>
+                                </li>
+                                <li>
+                                    <a href="">文化</a>
+                                </li>
+                                <li>
+                                    <a href="">行摄</a>
+                                </li>
+                                <li>
+                                    <a href="">娱乐</a>
+                                </li>
+                                <li>
+                                    <a href="">时尚</a>
+                                </li>
+                                <li>
+                                    <a href="">生活</a>
+                                </li>
+                                <li>
+                                    <a href="">科技</a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="right-aside">
+                            <div class="mod">
+                                <h2 class="content-title">
+                                    <span class="title">小组分类</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <!-- <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span> -->
+                                </h2>
+                                <div class="group-type">
+                                    <div class="group-items">
+                                        <h3>
+                                            <a href="">兴趣»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">旅行</a></li>
+                                            <li><a href="">摄影</a></li>
+                                            <li><a href="">影视</a></li>
+                                            <li><a href="">音乐</a></li>
+                                            <li><a href="">文学</a></li>
+                                            <li><a href="">游戏</a></li>
+                                            <li><a href="">漫画</a></li>
+                                            <li><a href="">运动</a></li>
+                                            <li><a href="">戏曲</a></li>
+                                            <li><a href="">桌游</a></li>
+                                            <li><a href="">怪癖</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-items">
+                                        <h3>
+                                            <a href="">生活»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">健康</a></li>
+                                            <li><a href="">美食</a></li>
+                                            <li><a href="">宠物</a></li>
+                                            <li><a href="">美容</a></li>
+                                            <li><a href="">化妆</a></li>
+                                            <li><a href="">护肤</a></li>
+                                            <li><a href="">服饰</a></li>
+                                            <li><a href="">公益</a></li>
+                                            <li><a href="">家庭</a></li>
+                                            <li><a href="">育儿</a></li>
+                                            <li><a href="">汽车</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-items">
+                                        <h3>
+                                            <a href="">购物»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">淘宝</a></li>
+                                            <li><a href="">二手</a></li>
+                                            <li><a href="">团购</a></li>
+                                            <li><a href="">数码</a></li>
+                                            <li><a href="">品牌</a></li>
+                                            <li><a href="">文具</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-items">
+                                        <h3>
+                                            <a href="">社会»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">求职</a></li>
+                                            <li><a href="">租房</a></li>
+                                            <li><a href="">励志</a></li>
+                                            <li><a href="">留学</a></li>
+                                            <li><a href="">出国</a></li>
+                                            <li><a href="">理财</a></li>
+                                            <li><a href="">传媒</a></li>
+                                            <li><a href="">创业</a></li>
+                                            <li><a href="">考试</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-items">
+                                        <h3>
+                                            <a href="">艺术»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">设计</a></li>
+                                            <li><a href="">手工</a></li>
+                                            <li><a href="">展览</a></li>
+                                            <li><a href="">曲艺</a></li>
+                                            <li><a href="">舞蹈</a></li>
+                                            <li><a href="">雕塑</a></li>
+                                            <li><a href="">纹身</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-items">
+                                        <h3>
+                                            <a href="">学术»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">人文</a></li>
+                                            <li><a href="">社科</a></li>
+                                            <li><a href="">自然</a></li>
+                                            <li><a href="">建筑</a></li>
+                                            <li><a href="">国学</a></li>
+                                            <li><a href="">语言</a></li>
+                                            <li><a href="">宗教</a></li>
+                                            <li><a href="">哲学</a></li>
+                                            <li><a href="">软件</a></li>
+                                            <li><a href="">硬件</a></li>
+                                            <li><a href="">互联网</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-items">
+                                        <h3>
+                                            <a href="">情感»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">恋爱</a></li>
+                                            <li><a href="">心情</a></li>
+                                            <li><a href="">心理学</a></li>
+                                            <li><a href="">星座</a></li>
+                                            <li><a href="">塔罗</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="group-items">
+                                        <h3>
+                                            <a href="">闲聊»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">吐槽</a></li>
+                                            <li><a href="">笑话</a></li>
+                                            <li><a href="">直播</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="main">
+                            <h2 class="content-title">
+                                <span class="title">热门小组</span>
+                                <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                <span class="additional">
+                                    (
+                                    <a href="">更多</a>
+                                    )
+                                </span>
+                            </h2>
+                            <ul class="main-items clearfix">
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_group/gro1.webp" alt="">
+                                    </a>
+                                    <div class="group-detail">
+                                        <div class="group-title"><a href="">我爱三毛</a></div>
+                                        <div class="head-counter">48659个成员</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_group/gro2.webp" alt="">
+                                    </a>
+                                    <div class="group-detail">
+                                        <div class="group-title"><a href="">沙发客</a></div>
+                                        <div class="head-counter">22642个成员</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_group/gro3.webp" alt="">
+                                    </a>
+                                    <div class="group-detail">
+                                        <div class="group-title"><a href="">刘慈欣</a></div>
+                                        <div class="head-counter">32659个成员</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_group/gro4.webp" alt="">
+                                    </a>
+                                    <div class="group-detail">
+                                        <div class="group-title"><a href="">西双版纳</a></div>
+                                        <div class="head-counter">12857个成员</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_group/gro5.webp" alt="">
+                                    </a>
+                                    <div class="group-detail">
+                                        <div class="group-title"><a href="">记事本圆梦小组</a></div>
+                                        <div class="head-counter">117114个成员</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_group/gro6.webp" alt="">
+                                    </a>
+                                    <div class="group-detail">
+                                        <div class="group-title"><a href="">这辈子一定要做几件疯狂的事</a></div>
+                                        <div class="head-counter">93128个成员</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_group/gro7.jpg" alt="">
+                                    </a>
+                                    <div class="group-detail">
+                                        <div class="group-title"><a href="">自己给自己剪头发</a></div>
+                                        <div class="head-counter">36514个成员</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db_group/gro8.jpg" alt="">
+                                    </a>
+                                    <div class="group-detail">
+                                        <div class="group-title"><a href="">我们就是要做衣服给自己穿</a></div>
+                                        <div class="head-counter">3628个成员</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <div class="wrapper db-read clearfix">
+                        <aside class="left-aside">
+                            <h2 class="section-title">
+                                <a href="">读书</a>
+                            </h2>
+                            <ul class="aside-nav">
+                                <li>
+                                    <a href="">分类浏览</a>
+                                </li>
+                                <li class="new">
+                                    <a href="">阅读</a>
+                                </li>
+                                <li>
+                                    <a href="">作者</a>
+                                </li>
+                                <li>
+                                    <a href="">书评</a>
+                                </li>
+                                <li>
+                                    <a href="">购书单</a>
+                                </li>
+                            </ul>
+                            <div class="read-app">
+                                <div class="app-icon">
+                                    <a class="img" href="">
+                                        <i class="app-icon app-read-icon"></i>
+                                    </a>
+                                </div>
+                                <div class="app-title">
+                                    <a>豆瓣阅读</a>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="right-aside">
+                            <div class="mod">
+                                <h2 class="content-title">
+                                    <span class="title">热门标签</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span>
+                                </h2>
+                                <div class="book-type">
+                                    <div class="book-items">
+                                        <ul class="type-items clearfix">
+                                            <li><h3>[文学]</h3></li>
+                                            <li><a href="">小说</a></li>
+                                            <li><a href="">随笔</a></li>
+                                            <li><a href="">日本文学</a></li>
+                                            <li><a href="">散文</a></li>
+                                            <li><a href="">诗歌</a></li>
+                                            <li><a href="">童话</a></li>
+                                            <li><a href="">名著</a></li>
+                                            <li><a href="">港台</a></li>
+                                            <li><a href="">更多</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="book-items">
+                                        <ul class="type-items clearfix">
+                                            <li><h3>[流行]</h3></li>
+                                            <li><a href="">漫画</a></li>
+                                            <li><a href="">推理</a></li>
+                                            <li><a href="">绘本</a></li>
+                                            <li><a href="">科幻</a></li>
+                                            <li><a href="">青春</a></li>
+                                            <li><a href="">言情</a></li>
+                                            <li><a href="">奇幻</a></li>
+                                            <li><a href="">武侠</a></li>
+                                            <li><a href="">更多</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="book-items">
+                                        <ul class="type-items clearfix">
+                                            <li><h3>[文化]</h3></li>
+                                            <li><a href="">历史</a></li>
+                                            <li><a href="">哲学</a></li>
+                                            <li><a href="">传记</a></li>
+                                            <li><a href="">设计</a></li>
+                                            <li><a href="">电影</a></li>
+                                            <li><a href="">建筑</a></li>
+                                            <li><a href="">回忆录</a></li>
+                                            <li><a href="">音乐</a></li>
+                                            <li><a href="">更多</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="book-items">
+                                        <ul class="type-items clearfix">
+                                            <li><h3>[生活]</h3></li>
+                                            <li><a href="">旅行</a></li>
+                                            <li><a href="">励志</a></li>
+                                            <li><a href="">教育</a></li>
+                                            <li><a href="">职场</a></li>
+                                            <li><a href="">美食</a></li>
+                                            <li><a href="">灵修</a></li>
+                                            <li><a href="">健康</a></li>
+                                            <li><a href="">家居</a></li>
+                                            <li><a href="">更多</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="book-items">
+                                        <ul class="type-items clearfix">
+                                            <li><h3>[经管]</h3></li>
+                                            <li><a href="">经济学</a></li>
+                                            <li><a href="">管理</a></li>
+                                            <li><a href="">商业</a></li>
+                                            <li><a href="">金融</a></li>
+                                            <li><a href="">营销</a></li>
+                                            <li><a href="">理财</a></li>
+                                            <li><a href="">股票</a></li>
+                                            <li><a href="">企业史</a></li>
+                                            <li><a href="">更多</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="book-items">
+                                        <ul class="type-items last-child clearfix">
+                                            <li><h3>[科技]</h3></li>
+                                            <li><a href="">科普</a></li>
+                                            <li><a href="">互联网</a></li>
+                                            <li><a href="">编程</a></li>
+                                            <li><a href="">交互设计</a></li>
+                                            <li><a href="">算法</a></li>
+                                            <li><a href="">通信</a></li>
+                                            <li><a href="">神经网络</a></li>
+                                            <li><a href="">更多</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="main">
+                            <div class="main-top">
+                                <h2 class="content-title">
+                                    <span class="title">新书速递</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span>
+                                </h2>
+                                <ul class="main-items clearfix">
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-read/read1.jpg" alt="">
+                                        </a>
+                                        <div class="book-title"><a href="">世界上最丑的女人</a></div>
+                                        <div class="book-author">[波兰] 奥尔加·托卡尔丘克</div>
+                                        <a href="" class="try-read">免费试读</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-read/read2.jpg" alt="">
+                                        </a>
+                                        <div class="book-title"><a href="">天堂主题公园</a></div>
+                                        <div class="book-author">[美]乔治·桑德斯</div>
+                                        <a href="" class="try-read">免费试读</a>
+                                    </li><li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-read/read3.jpg" alt="">
+                                        </a>
+                                        <div class="book-title"><a href="">十二月十日</a></div>
+                                        <div class="book-author">[美] 乔治·桑德斯</div>
+                                        <a href="" class="try-read">免费试读</a>
+                                    </li><li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-read/read4.jpg" alt="">
+                                        </a>
+                                        <div class="book-title"><a href="">我们的家</a></div>
+                                        <div class="book-author">[日] 青山七惠</div>
+                                        <a href="" class="try-read">免费试读</a>
+                                    </li>           
+                                </ul>
+                            </div>
+                            <div class="main-bottom">
+                                <h2 class="content-title">
+                                    <span class="title">原创数字作品</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span>
+                                </h2>
+                                <ul class="main-items clearfix">
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-read/read5.jpg" alt="">
+                                        </a>
+                                        <div class="book-title"><a href="">霜降</a></div>
+                                        <div class="book-author">免费</div>
+                                        <a href="" class="try-read">免费试读</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-read/read6.jpg" alt="">
+                                        </a>
+                                        <div class="book-title"><a href="">半川烟雨半川晴</a></div>
+                                        <div class="book-author">免费</div>
+                                        <a href="" class="try-read">免费试读</a>
+                                    </li><li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-read/read7.jpg" alt="">
+                                        </a>
+                                        <div class="book-title"><a href="">这个绿茶不爱我</a></div>
+                                        <div class="book-author">免费</div>
+                                        <a href="" class="try-read">免费试读</a>
+                                    </li><li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-read/read8.jpg" alt="">
+                                        </a>
+                                        <div class="book-title"><a href="">虽然35岁，但没关系</a></div>
+                                        <div class="book-author">免费</div>
+                                        <a href="" class="try-read">免费试读</a>
+                                    </li>           
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-container">
+                    <div class="wrapper db-music clearfix">
+                        <aside class="left-aside">
+                            <h2 class="section-title">
+                                <a href="">音乐</a>
+                            </h2>
+                            <ul class="aside-nav">
+                                <li>
+                                    <a href="">音乐人</a>
+                                </li>
+                                <li>
+                                    <a href="">潮潮豆瓣音乐周</a>
+                                </li>
+                                <li>
+                                    <a href="">金羊毛计划</a>
+                                </li>
+                                <li>
+                                    <a href="">专题</a>
+                                </li>
+                                <li>
+                                    <a href="">排行榜</a>
+                                </li>
+                                <li>
+                                    <a href="">分类浏览</a>
+                                </li>
+                                <li>
+                                    <a href="">乐评</a>
+                                </li>
+                                <li>
+                                    <a href="">豆瓣FM</a>
+                                </li>
+                                <li>
+                                    <a href="">歌单</a>
+                                </li>
+                                <li>
+                                    <a href="">阿比鹿音乐奖</a>
+                                </li>
+                            </ul>
+                            <div class="music-app">
+                                <div class="doubanFM-app">
+                                    <div class="app-icon">
+                                        <a class="img" href="">
+                                            <i class="app-icon app-read-icon"></i>
+                                        </a>
+                                    </div>
+                                    <div class="app-title">
+                                        <a>豆瓣FM</a>
+                                    </div>
+                                </div>
+                                <div class="doubanMusicMan-app">
+                                    <div class="app-icon">
+                                        <a class="img" href="">
+                                            <i></i>
+                                        </a>
+                                    </div>
+                                    <div class="app-title">
+                                        <a>豆瓣音乐人</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside class="right-aside">
+                            <div class="mod">
+                                <h2 class="content-title">
+                                    <span class="title">本周流行音乐人</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span>
+                                </h2>
+                                <div class="musicer-rank">
+                                    <ul>
+                                        <li>
+                                            <span>1.</span>
+                                            <a href="" class="img">
+                                                <img src="./img/db-music/rank1.jpg" alt="">
+                                                <div class="cover"></div>
+                                            </a>
+                                            <div class="music-detail">
+                                                <div class="music-title"><a>Yamato Ryou</a></div>
+                                                <div class="music-type">流派：电子 Electronica</div>
+                                                <div class="attention-count">325人关注</div>
+                                            </div>
+                                            
+                                        </li>
+                                        <li>
+                                            <span>2.</span>
+                                            <a href="" class="img">
+                                                <img src="./img/db-music/rank2.jpg" alt="">
+                                                <div class="cover"></div>
+                                            </a>
+                                            <div class="music-detail">
+                                                <div class="music-title"><a>The NONAME</a></div>
+                                                <div class="music-type">流派：摇滚 Rock</div>
+                                                <div class="attention-count">906人关注</div>
+                                            </div>
+                                            
+                                        </li>
+                                        <li>
+                                            <span>3.</span>
+                                            <a href="" class="img">
+                                                <img src="./img/db-music/rank3.jpg" alt="">
+                                                <div class="cover"></div>
+                                            </a>
+                                            <div class="music-detail">
+                                                <div class="music-title"><a>LAVA|OX|SEA</a></div>
+                                                <div class="music-type">流派：摇滚 Rock</div>
+                                                <div class="attention-count">1953人关注</div>
+                                            </div>
+                                            
+                                        </li>
+                                        <li>
+                                            <span>4.</span>
+                                            <a href="" class="img">
+                                                <img src="./img/db-music/rank4.jpg" alt="">
+                                                <div class="cover"></div>
+                                            </a>
+                                            <div class="music-detail">
+                                                <div class="music-title"><a>JESSE CHOW</a></div>
+                                                <div class="music-type">流派：电子 Electronica</div>
+                                                <div class="attention-count">1073人关注</div>
+                                            </div>
+                                            
+                                        </li>
+                                        <li>
+                                            <span>5.</span>
+                                            <a href="" class="img">
+                                                <img src="./img/db-music/rank5.jpg" alt="">
+                                                <div class="cover"></div>
+                                            </a>
+                                            <div class="music-detail">
+                                                <div class="music-title"><a>Fading Horizon</a></div>
+                                                <div class="music-type">流派：摇滚 Rock</div>
+                                                <div class="attention-count">1224人关注</div>
+                                            </div>
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                        </aside>
+                        <div class="main">
+                            <div class="main-top">
+                                <h2 class="content-title">
+                                    <span class="title">豆瓣新碟榜</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span>
+                                </h2>
+                                <ul class="main-items clearfix">
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/newRank1.jpg" alt="">
+                                        </a>
+                                        <div class="music-title"><a href="">1. Dear Life</a></div>
+                                        <div class="music-author"><a href="">郁可唯 Yisa Yu</a></div>
+                                        <div class="score">
+                                            <div class="stars mus1"></div>
+                                            <span>7.9</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/newRank2.jpg" alt="">
+                                        </a>
+                                        <div class="music-title"><a href="">2. 启示录</a></div>
+                                        <div class="music-author"><a href="">G.E.M 邓紫棋</a></div>
+                                        <div class="score">
+                                            <div class="stars mus2"></div>
+                                            <span>7.4</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/newRank3.jpg" alt="">
+                                        </a>
+                                        <div class="music-title"><a href="">3. 也许我可以无视死亡</a></div>
+                                        <div class="music-author"><a href="">汪峰 feng wang</a></div>
+                                        <div class="score">
+                                            <div class="stars mus3"></div>
+                                            <span>6.8</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/newRank4.jpg" alt="">
+                                        </a>
+                                        <div class="music-title"><a href="">4. 署前街少年</a></div>
+                                        <div class="music-author"><a href="">赵雷 lei zhao</a></div>
+                                        <div class="score">
+                                            <div class="stars mus4"></div>
+                                            <span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/newRank5.jpg" alt="">
+                                        </a>
+                                        <div class="music-title"><a href="">5. RENAISSANCE</a></div>
+                                        <div class="music-author"><a href="">Beyoncé</a></div>
+                                        <div class="score">
+                                            <div class="stars mus5"></div>
+                                            <span>8.1</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/newRank6.jpg" alt="">
+                                        </a>
+                                        <div class="music-title"><a href="">6. Will Of The People</a></div>
+                                        <div class="music-author"><a href="">Muse</a></div>
+                                        <div class="score">
+                                            <div class="stars mus6"></div>
+                                            <span>5.3</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/newRank7.jpg" alt="">
+                                        </a>
+                                        <div class="music-title"><a href="">7. BETWEEN 1&2</a></div>
+                                        <div class="music-author"><a href="">TWICE</a></div>
+                                        <div class="score">
+                                            <div class="stars mus7"></div>
+                                            <span>8.0</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/newRank8.jpg" alt="">
+                                        </a>
+                                        <div class="music-title"><a href="">8.  NewJeans 1st EP 'New Jeans'</a></div>
+                                        <div class="music-author"><a href="">NewJeans 뉴진스</a></div>
+                                        <div class="score">
+                                            <div class="stars mus8"></div>
+                                            <span>8.6</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-bottom">
+                                <h2 class="content-title">
+                                    <span class="title">热门歌单</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span>
+                                </h2>
+                                <ul class="main-items clearfix">
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/hot1.jpg" alt="">
+                                        </a>
+                                        <div class="music-title">James Brown</div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/hot2.jpg" alt="">
+                                        </a>
+                                        <div class="music-title">青春</div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/hot3.jpg" alt="">
+                                        </a>
+                                        <div class="music-title">Keren Ann</div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/hot4.jpg" alt="">
+                                        </a>
+                                        <div class="music-title">Red & Her</div>
+                                    </li>
+                                    <li>
+                                        <a href="" class="img">
+                                            <img src="./img/db-music/hot5.jpg" alt="">
+                                        </a>
+                                        <div class="music-title">学任的歌单</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-container">
+                    <div class="wrapper db-mall clearfix">
+                        <aside class="left-aside">
+                            <h2 class="section-title">
+                                <a href="">豆品</a>
+                            </h2>
+                        </aside>
+                        <aside class="right-aside">
+                            <div class="mod">
+                                <h2 class="content-title">
+                                    <span class="title">热门活动</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                </h2>
+                                <a href="" class="img">
+                                    <img src="./img/db-mall/aside1.jpg" alt="">
+                                    <div class="cover"></div>
+                                </a>
+                                <div class="active-title">
+                                    <a>我的豆瓣收藏夹里有什么</a>
+                                </div>
+                            </div>
+                            <div class="mod">
+                                <h2 class="content-title">
+                                    <span class="title">官方小组</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span>
+                                </h2>
+                                <div class="group">
+                                    <a href="">【申请已结束】一日三餐，一起吃饭：邀请各位爱晒猫的铲屎官免费试用新品「豆瓣猫咪餐具」</a>
+                                    <div class="detail clearfix">
+                                        <span class="left">685 人参与</span>
+                                        <span class="right">03-07</span>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <a href="">请开麦｜我们很想听听你的心声，期待豆瓣豆品出什么样的产品？</a>
+                                    <div class="detail clearfix">
+                                        <span class="left">206 人参与</span>
+                                        <span class="right">07-25</span>
+                                    </div>
+                                </div>
+                                <div class="group">
+                                    <a href="">会员中心上线了「豆瓣遇见你便利贴」，100积分即可兑换</a>
+                                    <div class="detail clearfix">
+                                        <span class="left">13 人参与</span>
+                                        <span class="right">02-08</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="main">
+                            <h2 class="content-title">
+                                <span class="title">热卖商品</span>
+                                <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                <span class="additional">
+                                    (
+                                    <a href="">更多</a>
+                                    )
+                                </span>
+                            </h2>
+                            <ul class="main-items clearfix">
+                                <li class="left">
+                                    <div class="img">
+                                        <a href="" class="img">
+                                            <img src="./img/db-mall/mall1.jpg" alt="">
+                                            <div class="cover"></div>
+                                        </a>
+                                    </div>
+                                    <div class="detail clearfix">
+                                        <span class="left"><a href="">豆瓣读书周历2022</a></span>
+                                        <span class="right price">￥ 88</span>
+                                    </div>
+                                </li>
+                                <li class="left">
+                                    <div class="img">
+                                        <a href="" class="img">
+                                            <img src="./img/db-mall/mall2.jpg" alt="">
+                                            <div class="cover"></div>
+                                        </a>
+                                    </div>
+                                    <div class="detail clearfix">
+                                        <span class="left"><a href="">国家图书馆 x 豆瓣 读书香薰</a></span>
+                                        <span class="right price">￥ 128</span>
+                                    </div>
+                                </li>
+                                <li class="left">
+                                    <div class="img">
+                                        <a href="" class="img">
+                                            <img src="./img/db-mall/mall3.jpg" alt="">
+                                            <div class="cover"></div>
+                                        </a>
+                                    </div>
+                                    <div class="detail clearfix">
+                                        <span class="left"><a href="">豆瓣电影日历2022</a></span>
+                                        <span class="right price">￥ 99</span>
+                                    </div>
+                                </li>
+                                <li class="left">
+                                    <div class="img">
+                                        <a href="" class="img">
+                                            <img src="./img/db-mall/mall4.jpg" alt="">
+                                            <div class="cover"></div>
+                                        </a>
+                                    </div>
+                                    <div class="detail clearfix">
+                                        <span class="left"><a href="">豆猫电影手办 · 第二弹</a></span>
+                                        <span class="right price">￥ 59</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-container">
+                    <div class="wrapper db-city clearfix">
+                        <aside class="left-aside">
+                            <h2 class="section-title">
+                                <a href="">同城</a>
+                            </h2>
+                            <ul class="aside-nav">
+                                <li>
+                                    <a href="">近期活动</a>
+                                </li>
+                                <li>
+                                    <a href="">主办方</a>
+                                </li>
+                                <li>
+                                    <a href="">舞台剧</a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <aside class="right-aside">
+                            <div class="mod">
+                                <h2 class="content-title">
+                                    <span class="title">活动标签</span>
+                                    <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                    <!-- <span class="additional">
+                                        (
+                                        <a href="">更多</a>
+                                        )
+                                    </span> -->
+                                </h2>
+                                <div class="city-type">
+                                    <div class="city-items">
+                                        <h3>
+                                            <a href="">音乐»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">小型现场</a></li>
+                                            <li><a href="">音乐会</a></li>
+                                            <li><a href="">演唱会</a></li>
+                                            <li><a href="">音乐节</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="city-items">
+                                        <h3>
+                                            <a href="">戏剧»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">话剧</a></li>
+                                            <li><a href="">音乐剧</a></li>
+                                            <li><a href="">舞剧</a></li>
+                                            <li><a href="">歌剧</a></li>
+                                            <li><a href="">戏曲</a></li>
+                                            <li><a href="">其他</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="city-items">
+                                        <h3>
+                                            <a href="">聚会»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">生活</a></li>
+                                            <li><a href="">集市</a></li>
+                                            <li><a href="">摄影</a></li>
+                                            <li><a href="">外语</a></li>
+                                            <li><a href="">桌游</a></li>
+                                            <li><a href="">夜店</a></li>
+                                            <li><a href="">交友</a></li>
+                                            <li><a href="">美食</a></li>
+                                            <li><a href="">派对</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="city-items">
+                                        <h3>
+                                            <a href="">电影»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">主题放映</a></li>
+                                            <li><a href="">影展</a></li>
+                                            <li><a href="">影院活动</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="city-items">
+                                        <h3>
+                                            <a href="">其他»</a>
+                                        </h3>
+                                        <ul class="type-items clearfix">
+                                            <li><a href="">讲座</a></li>
+                                            <li><a href="">展览</a></li>
+                                            <li><a href="">运动</a></li>
+                                            <li><a href="">旅行</a></li>
+                                            <li><a href="">公益</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="main">
+                            <h2 class="content-title">
+                                <span class="title">合肥 · 本周热门活动</span>
+                                <span class="points">·&nbsp;·&nbsp;·&nbsp;·&nbsp;·&nbsp;·</span>
+                                <span class="additional">
+                                    (
+                                    <a href="">更多</a>
+                                    )
+                                </span>
+                            </h2>
+                            <ul class="main-items clearfix">
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db-city/act1.jpg" alt="">
+                                    </a>
+                                    <div class="city-detail">
+                                        <div class="city-title"><a href="">《云难》景德镇文艺复兴乐队 2022巡演 合肥站</a></div>
+                                        <div class="time">9月8日 周四 20:00 - 20:00</div>
+                                        <div class="address">ON THE WAY 演出现场 双河...</div>
+                                        <div class="head-counter">3人关注</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db-city/act2.jpg" alt="">
+                                    </a>
+                                    <div class="city-detail">
+                                        <div class="city-title"><a href="">民谣在路上系列演出之《张老汉脱贫记2022》合肥站</a></div>
+                                        <div class="time">9月4日 周日 20:00 - 21:30</div>
+                                        <div class="address">ON THE WAY 演出现场 双河...</div>
+                                        <div class="head-counter">2人关注</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db-city/act3.jpg" alt="">
+                                    </a>
+                                    <div class="city-detail">
+                                        <div class="city-title"><a href="">《致敬传奇 光辉岁月 》纪念BEYOND经典金曲演唱会</a></div>
+                                        <div class="time">9月18日 周日 19:30 - 21:00</div>
+                                        <div class="address">安徽大剧院 包公街道芜湖路...</div>
+                                        <div class="head-counter">2人关注</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="" class="img">
+                                        <img src="./img/db-city/act4.jpg" alt="">
+                                    </a>
+                                    <div class="city-detail">
+                                        <div class="city-title"><a href="">黑屋乐队2022巡演|保持热爱·共赴山海 合肥站</a></div>
+                                        <div class="time">9月16日 周五 20:00 - 21:30</div>
+                                        <div class="address">ON THE WAY 演出现场 双河...</div>
+                                        <div class="head-counter">2人关注</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container clearfix">
+            <div class="left">
+                <p>© 2005－2022 douban.com, all rights reserved 北京豆网科技有限公司</p>
+                <p><a href="">营业执照</a> 京ICP证090015号 京ICP备11027288号 网络视听许可证<a href="">0110418</a>号 </p>
+                <p>
+                    京网文[2021]2980-826号 <img src="img/biaoshi.gif" alt=""> <a href="">新出发京批字第直160029号</a> （署）出网证(京)字120号
+                </p>
+                <p>
+                    违法和不良信息/涉未成年人有害信息投诉：tousu@douban.com
+                </p>
+                <p>
+                    违法和不良信息举报电话：4008353331-9
+                </p>
+                <p>
+                    网络从业者不良行为举报：jubao@douban.cm
+                </p>
+                <p>
+                    <img src="img/jubao.png" alt=""> <a href="">中国互联网举报中心</a> 电话：12377 <a href="">京公网安备11010502000728</a>
+                </p>
+            </div>
+            <div class="right">
+                <nav class="menu">
+                    <a href="">关于豆瓣</a>
+                    ·
+                    <a href="">在豆瓣工作</a>
+                    ·
+                    <a href="">联系我们</a>
+                    ·
+                    <a href="">法律声明</a>
+                    ·
+                    <a href="">帮助中心</a>
+                    ·
+                    <a href="">移动应用</a>
+                    ·
+                    <a href="">豆瓣广告</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

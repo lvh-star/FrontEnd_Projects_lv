@@ -1,0 +1,1196 @@
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.new::after{
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 8px;
+    background: url(../img/new_menu.gif) no-repeat;
+    background-size: contain;
+}
+a{
+    color: #37a;
+    font-size: 12px;
+}
+a:hover{
+    background-color: #37a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
+body {
+    font-family: Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+/* I. 左上角logo */
+header>.header-inner>.logo{
+    width: 100%;
+    height: 34px;
+    background-color: #EDF4EC;
+}
+header>.header-inner>.logo h1{
+    width: 102px;
+    height: 20px;
+    padding: 7px 13px;
+}
+header>.header-inner>.logo h1 a{
+    font-size: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/logo_db.png) no-repeat;
+    background-size: contain;
+}
+/* II. 导航栏 */
+header .header-inner nav{
+    width: 100%;
+    height: 95px;
+    position: relative;
+}
+header .header-inner nav .nav-inner{
+    width: 1098px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+    /* 导航栏标题 */
+header .header-inner nav .nav-inner .title{
+    font-size: 0;
+    width: 79px;
+    height: 23px;
+    margin: -0.5px 0 0 0;
+    background: url(../img/sitename.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+}
+    /* 搜索栏 */
+header .header-inner nav .nav-inner .search{
+    display: inline-block;
+    width: 270px;
+    height: 30px;
+    margin-left: 17px;
+    border: solid 1px #c3c3c3;
+    vertical-align: middle;
+    position: relative;
+}
+header .header-inner nav .nav-inner .search .inp input{
+    border: none;
+    width: 250px;
+    height: 25px;
+    font-size: 13px;
+    margin: 2px 0 0 3px;
+}
+header .header-inner nav .nav-inner .search .inp input::placeholder{
+    color: #ccc;
+}
+header .header-inner nav .nav-inner .search .btn input{
+    background: transparent;
+    color: transparent;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/3.1-搜索.png) no-repeat center center;
+    background-size: 20px 20px;
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+    /* nav主体 */
+header .header-inner nav .nav-inner .nav-items{
+    width: 515px;
+    height: 30px;
+    float: right;
+    background-color: #fff;
+    vertical-align: middle;
+}
+header .header-inner nav .nav-inner .nav-items ul li{
+    float: left;
+    width: 50px;
+    height: 30px;
+    margin-right: 8px;
+}
+header .header-inner nav .nav-inner .nav-items ul li:last-of-type{
+    margin-right: 0;
+}
+header .header-inner nav .nav-inner .nav-items ul li a{
+    font-size: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* background-color: red; */
+}
+header .header-inner nav .nav-inner .nav-items ul li .db-book{
+    background: url(../img/anony_nav_logo@2x.png) no-repeat;
+    background-size: auto 70%;
+    background-position: 0px 5px;
+}
+header .header-inner nav .nav-inner .nav-items ul li .db-movie{
+    background: url(../img/anony_nav_logo@2x.png) no-repeat;
+    background-size: auto 70%;
+    background-position: -63px 5px;
+}
+header .header-inner nav .nav-inner .nav-items ul li .db-music{
+    background: url(../img/anony_nav_logo@2x.png) no-repeat;
+    background-size: auto 70%;
+    background-position: -128px 5px;
+}
+header .header-inner nav .nav-inner .nav-items ul li .db-comcity{
+    background: url(../img/anony_nav_logo@2x.png) no-repeat;
+    background-size: auto 70%;
+    background-position: -194px 5px;
+}
+header .header-inner nav .nav-inner .nav-items ul li .db-group{
+    background: url(../img/anony_nav_logo@2x.png) no-repeat;
+    background-size: auto 70%;
+    background-position: -260px 5px;
+}
+header .header-inner nav .nav-inner .nav-items ul li .db-read{
+    background: url(../img/anony_nav_logo@2x.png) no-repeat;
+    background-size: auto 70%;
+    background-position: -323px 5px;
+}
+header .header-inner nav .nav-inner .nav-items ul li .db-FM{
+    background: url(../img/anony_nav_logo@2x.png) no-repeat;
+    background-size: auto 70%;
+    background-position: -387px 5px;
+}
+header .header-inner nav .nav-inner .nav-items ul li .db-time{
+    background: url(../img/ic_shijian_home_nav.png) no-repeat;
+    background-size: auto 80%;
+    background-position: 0px 4px;
+}
+header .header-inner nav .nav-inner .nav-items ul li .db-doupin{
+    background: url(../img/anony_nav_logo@2x.png) no-repeat;
+    background-size: auto 70%;
+    background-position: -453px 5px;
+}
+/* III. 海报及登录部分 */
+    /* 海报 */
+.container .login{
+    width: 100%;
+    height: 304px;
+    background-color: #edf4ed;
+}
+.container .login .login-container{
+    width: 950px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.container .login .login-container .poster{
+    width: 700px;
+    height: 304px;
+    background-image: url(../img/1771365ca98ig9er706.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -200px;
+}
+    /* 登录 */
+.container .login .login-container .login-app{
+    float: right;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.container .login .login-container .login-app .login-app-body{
+    width: 280px;
+    height: 270px;
+    padding-top: 30px;
+    margin: auto;
+    
+}
+.container .login .login-container .login-app .login-app-body .login-app-nav div{
+    float: left;
+    width: 50%;
+    height: 25px;
+    text-align: center;
+    font-family: Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    color: #9b9b9b;
+    font-size: 12px;
+    border-bottom: solid 1px #9b9b9b;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+.container .login .login-container .login-app .login-app-body .login-app-nav a{
+    color: inherit;
+}
+.container .login .login-container .login-app .login-app-body .login-app-nav a:hover{
+    background-color: transparent;
+    color: inherit;
+}
+.container .login .login-container .login-app .login-app-body .login-app-nav .sms-login{
+    border-bottom: #494949 1px solid;
+    color: #333;
+    font-weight: 600;
+}
+.container .login .login-container .login-app .login-app-body .login-app-nav .sms-login a{
+    color: inherit;
+}
+
+.container .login .login-container .login-app .login-app-body .tips{
+    width: 100%;
+    height: 19.7px;
+    text-align: center;
+    color: #9b9b9b;
+    font-size: 12px;
+    line-height: 19.7px;
+    margin-bottom: 10px;
+}
+.container .login .login-container .login-app .login-app-body .tips a{
+    color: #41ac52;
+}
+.container .login .login-container .login-app .login-app-body .tips a:hover{
+    background-color: transparent;
+}
+
+.container .login .login-container .login-app .login-app-body .login-int .int-tele,.int-passcode{
+    width: 100%;
+    height: 32.6px;
+    border: 1px solid #c3c3c3;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.container .login .login-container .login-app .login-app-body .login-int .int-tele .tele-header{
+    font-weight: 700;
+    font-size: 15px;
+    float: left;
+    width: 50px;
+    height: 25px;
+    margin: 3.2px 10px 3.2px 0;
+    text-align: center;
+    line-height: 25px;
+    border-right: 1px solid #c3c3c3;
+}
+.container .login .login-container .login-app .login-app-body .login-int .int-tele input[type="text"]{
+    line-height: 32.6px;
+}
+.container .login .login-container .login-app .login-app-body .login-int .int-passcode input{
+    line-height: 32.6px;
+}
+.container .login .login-container .login-app .login-app-body .login-int .int-passcode input[type="text"]{
+    margin-left: 10px;
+}
+.container .login .login-container .login-app .login-app-body .login-int .int-passcode input[type="submit"]{
+    margin-left: 10px;
+    color: #41ac52;
+    background: transparent;
+    cursor: pointer;
+}
+.container .login .login-container .login-app .login-app-body .login-btn input[type="submit"]{
+    width: 100%;
+    height: 32.6px;
+    border-radius: 4px;
+    background-color: #41ac52;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .login .login-container .login-app .login-app-body .other-item{
+    height: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.container .login .login-container .login-app .login-app-body .other-item a{
+    font-size: 13px;
+    color: #41ac52;
+    float: right;
+}
+.container .login .login-container .login-app .login-app-body .other-item a:hover{
+    background-color: transparent;
+}
+.container .login .login-container .login-app .login-app-body .other-ways-to-login{
+    width: 100%;
+    height: 32px;
+    border-top: solid 1px #c3c3c3;
+    font-size: 12px;
+    color: #9b9b9b;
+    line-height: 32px;
+    padding: 5px 0;
+}
+.container .login .login-container .login-app .login-app-body .other-ways-to-login a:hover{
+    background-color: transparent;
+}
+.container .login .login-container .login-app .login-app-body .other-ways-to-login a span{
+    font-size: 0;
+}
+.iconfont{
+    font-size: 24px !important;
+    
+}
+.icon-weixin{
+    color: #1aad19;
+    vertical-align: middle;
+    margin: 5px 10px;
+}
+.icon-weibo{
+    color: #d94e2f;
+    vertical-align: middle;
+}
+
+.container .login .login-container .login-app .QR-code a{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 7px;
+    background-image: url(../img/下载.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+}
+.container .login .login-container .login-app .QR-code .tip{
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    top: 13px;
+    right: 40px;
+    font-size: 13px;
+    border: 1px solid rgba(66,189,86,.3);
+    border-radius: 4px;
+    color: #666;
+    background: #f5faf9;
+    display: none;
+}
+.container .login .login-container .login-app .QR-code a:hover{
+    opacity: 0.7;   
+    background-color: transparent;
+}
+.container .login .login-container .login-app .QR-code a:hover+.tip{
+    display: block;   
+}
+
+.app-download{
+    position: absolute;
+    left: 450px;
+    top: 100px;
+}
+.app-download .app-name{
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+.app-download .link-btn{
+    display: inline-block;
+}
+
+.app-download .link-btn a{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    background-color: #1aad19;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+}
+.app-download .link-QRlogo{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    vertical-align: middle;
+    position: relative;
+}
+.app-download .link-QRlogo a img{
+    width: 30px;
+    height: 30px;
+}
+.app-download .link-QRlogo .link-QR{
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    display: none;
+}
+.app-download .link-QRlogo .link-QR img{
+    width: 150px;
+    height: 150px;
+    margin: 20px 25px 5px 25px;
+}
+.app-download .link-QRlogo .link-QR span{
+    font-size: 13px;
+    color: #9b9b9b;
+}
+.app-download .link-QRlogo a:hover+.link-QR{
+    display: block;
+}
+.container .contain-main a:active{
+    background-color: #f93;
+    color: #fff !important;
+}
+.container .contain-main{
+    width: 100%;
+
+}
+.container .contain-main .hot{
+    width: 1000px;
+    height: 453.3px;
+    margin: 10px auto;
+}
+.container .contain-main .hot .hot-content{
+    width: 655px;
+    float: left;
+}
+
+.content-title{
+    width: 300px;
+    margin-bottom: 12px;
+}
+.hot-h2{
+    margin: 20px 0 10px 0;
+}
+.content-title .title{
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    line-height: 150%;
+}
+.content-title .additional{
+    color: #666;
+    font-size: 12px;
+} 
+.content-title .additional a{
+    color: #37a;
+}
+.content-title .additional a:hover{
+    color: #fff;
+}
+.hot-content .post{
+    width: 350px;
+    height: 388.8px;
+    margin-right: 30px;
+    float: left;
+}
+.hot-content .post li{
+    display: inline-block;
+   
+    margin: 0 2px 10px 0;
+}
+.hot-content .post li span{
+    font-size: 12px;
+    color: #9b9b9b;
+}
+.hot-content .post li .pic{
+    display: block;
+    width: 170px;
+    height: 170px;
+}
+.hot-content .post li .pic:hover{
+    background-color: transparent;
+}
+.hot-content .post .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hot-content .post-content{
+    float: left;
+    width: 275px;
+}
+.hot-content .post-content li{
+    margin-top: 12px;
+}
+.hot-content .post-content .first{
+    margin-top: 0;
+}
+.hot-content .post-content .first .author{
+    font-size: 12px;
+    color: #9b9b9b;
+    margin: 5px 0;
+}
+.hot-content .post-content .first p{
+    font-size: 12px;
+    color: #666;
+    line-height: 1.62;
+}
+
+.hot-topic{
+    float: left;
+    margin-left: 40px;
+}
+.hot-topic .topic-title li{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.hot-topic .topic-title li a{
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.hot-topic .topic-title li .liulanliang{
+    color: #9b9b9b;
+}
+
+/* 分类内容 */
+/* .section{
+    
+} */
+.section .section-container .wrapper a:hover{
+    color: #fff;
+}
+.section a[class="img"]:hover{
+    background-color: transparent;
+}
+.section .section-container{
+    width: 100%;
+    /* height: 596px; */
+    padding: 40px 0 20px 0;
+}
+.section .section-container:nth-of-type(2n+1){
+    background-color: #f7f7f7;
+}
+.section .section-container .wrapper{
+    width: 950px;
+    margin: auto;
+}
+.section .section-container .wrapper .left-aside{
+    width: 100px;
+    margin-right: 20px;
+    float: left;
+}
+.section .section-container .wrapper .left-aside .section-title a{
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.section .section-container .wrapper .left-aside .aside-nav li{
+    /* display: block; */
+    margin-top: 5px;
+}
+.section .section-container .wrapper .left-aside .aside-nav li a{
+    font-size: 14px;
+    line-height: 22.68px;
+}
+.section .section-container .wrapper .left-aside .aside-nav .new::after{
+    position: relative;
+    top: -3px;
+}
+.section .section-container .wrapper .main{
+    overflow: hidden;
+}
+.section .section-container .wrapper .main .content-title{
+    margin-bottom: 12px;
+}
+.section .section-container .wrapper .right-aside{
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+
+    /* 豆瓣时间 */
+.section .section-container .db-time aside a{
+    color: #494949;
+}
+.section .section-container .db-time aside a:hover{
+    color: #fff;
+}
+.section .section-container .db-time .main .time-list li{
+    width: 100px;
+    height: 250px;
+    margin: 0 60px 30px 0;
+    float: left;
+    text-align: center;
+    vertical-align: top;
+}
+.section .section-container .db-time .main .time-list li a[class="img"]{
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+.section .section-container .db-time .main .time-list li a[class="img"]::after{
+    content: "";
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: url(../img/db_time/ic_audio.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+}
+.section .section-container .db-time .main .time-list li a[class="img"] img{
+    width: 100px;
+}
+.section .section-container .db-time .main .time-list li a[class="li-title"]{
+    color: #333;
+    font-size: 13px;
+    line-height: 1.38;
+}
+.section .section-container .db-time .main .time-list li a[class="li-title"]:hover{
+    color: #fff;
+}
+.section .section-container .db-time .main .time-list li .type{
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+    /* 豆瓣电影 */
+.section .section-container .db-movie a{
+    color: #27a;
+}
+.section .section-container .db-movie .right-aside .mod{
+    margin-bottom: 30px;
+}
+.section .section-container .db-movie .right-aside .mod .type-items li{
+    float: left;
+    margin-top: 4px;
+    width: 48px;
+}
+.section .section-container .db-movie .right-aside .mod .hot-items li{
+    border-bottom: solid 1px #eaeaea;
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+}
+.section .section-container .db-movie .right-aside .mod .hot-items span{
+    font-size: 12px;
+    color: #171717;
+}
+.section .section-container .db-movie .main .main-items li{
+    width: 100px;
+    height: 225px;
+    margin: 0 23px 20px 10px;
+    text-align: center;
+    float: left;
+    font-size: 12px;
+    vertical-align: top;
+    
+}
+.section .section-container .db-movie .main .main-items li .img{
+    display: inline-block;
+    width: 100px;
+    height: 145px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.section .section-container .db-movie .main .main-items li .img img{
+    width: 100px;
+}
+.section .section-container .db-movie .main .main-items li .movie-title{
+    /* width: 100px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+.section .section-container .db-movie .main .main-items li .movie-title:hover{
+    color: #fff;
+}
+.main .main-items .movie-title a{
+    font-size: 13px;
+    color: #333;
+}
+.main .main-items .score{
+    margin-bottom: 13px;
+}
+
+.main .main-items .score .stars{
+    display: inline-block;
+    width: 55px;
+    height: 11px;
+    margin-right: 3px;
+    background: url(../img/db_movie/ic_rating.png) no-repeat;
+    background-size: cover;
+}
+.db-movie .main .main-items .score .mov1{
+    background-position: 0 -34px;
+}
+.db-movie .main .main-items .score .mov2{
+    background-position: 0 -34px;
+}
+.db-movie .main .main-items .score .mov3{
+    background-position: 0 -11px;
+}
+.db-movie .main .main-items .score .mov4{
+    background-position: 0 -34px;
+}
+.db-movie .main .main-items .score .mov5{
+    background-position: 0 -23px;
+}
+.db-movie .main .main-items .score .mov6{
+    background-position: 0 -34px;
+}
+.db-movie .main .main-items .score .mov7{
+    background-position: 0 -23px;
+}
+.db-movie .main .main-items .score .mov8{
+    background-position: 0 -34px;
+}
+.db-movie .main .main-items .score span{
+    color: #e09015;
+}
+.db-movie .main .main-items .buy{
+    padding: 5px 10px;
+    color: #fff;
+    background-color: #1c8bd0;
+    border-radius: 2px;
+}
+.db-movie .main .main-items .buy:hover{
+    background-color: #047fcb;
+}
+
+    /* 豆瓣小组 */
+.section .section-container .db-group a{
+    color: #017a85;
+}
+.section .section-container .db-group .right-aside .group-items{
+    margin-bottom: 15px;
+}
+.section .section-container .db-group .right-aside .group-items h3{
+    margin-bottom: 3px;
+}
+.section .section-container .db-group .right-aside .group-items h3 a{
+    font-size: 14px;
+    color: #333;
+}
+.section .section-container .db-group .right-aside .group-items h3 a:hover{
+    /* font-size: 14px; */
+    color: #fff;
+}
+.section .section-container .db-group .right-aside .group-items .type-items li{
+    float: left;
+    margin: 3px 13px 0 0;
+}
+.section .section-container .db-group .main .main-items li{
+    width: 248px;
+    height: 58px;
+    margin: 30px 0 0 0;
+    float: left;
+}
+.section .section-container .db-group .main .main-items li .img{
+    display: inline-block;
+    margin: 0 15px 10px 0;
+}
+.section .section-container .db-group .main .main-items li .img img{
+    width: 48px;
+    height: 48px;
+}
+.section .section-container .db-group .main .main-items li .group-detail{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    color: #999;
+}
+.section .section-container .db-group .main .main-items li .group-detail a{
+    font-size: 13px;
+}
+.section .section-container .db-group .main .main-items li .group-detail .head-counter{
+    margin-top: 14px;
+}
+
+    /* 豆瓣读书 */
+.section .section-container .db-read a{
+    color: #614e3c;
+}
+.section-container .db-read .section-title a{
+    color: #4a2f14;
+}
+.section .section-container .db-read .left-aside .read-app{
+    margin-top: 20px;
+}
+.app-icon i{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    background: url(../img/app_icons.jpg) no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    box-shadow: #999 1px 1px 2px;
+}
+.section .section-container .db-read .right-aside .book-type .book-items ul{
+    width: 275px;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #eaeaea;
+    margin-bottom: 10px;
+}
+.section .section-container .db-read .right-aside .book-type .book-items .last-child{
+    border: none;
+}
+.section .section-container .db-read .right-aside .book-type .book-items ul li{
+    float: left;
+    margin: 0 12px 5px 0;
+}
+.section .section-container .db-read .right-aside .book-type .book-items ul li h3{
+    font-size: 12px;
+    color: #999;
+    display: inline-block;
+}
+.section .section-container .db-read .main .main-top{
+    margin-bottom: 30px;
+}
+.section .section-container .db-read .main .main-items li{
+    width: 100px;
+    margin: 0 15px 15px 15px;
+    text-align: center;
+    float: left;
+}
+
+.section .section-container .db-read .main .main-items li .img{
+    display: inline-block;
+    width: 100px;
+    height: 145px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.section .section-container .db-read .main .main-items li .img img{
+    width: 100px;
+}
+.section .section-container .db-read .main .main-items li .book-title{
+    width: 100px;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.5;
+}
+.section .section-container .db-read .main .main-items li .book-title a{
+    font-size: 13px;
+}
+.section .section-container .db-read .main .main-items li .book-title:hover{
+    color: #fff;
+}
+.section .section-container .db-read .main .main-items li .book-author{
+    font-size: 12px;
+    width: 72px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 7px auto 0 auto;
+}
+.section .section-container .db-read .main .main-items li .try-read{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 4px;
+    color: #fff;
+    background-color: #999a95;
+    border-radius: 2px;
+}
+.section .section-container .db-read .main .main-items li .try-read:hover{
+    background-color: #878882;
+}
+    /* 音乐 */
+.section .section-container .db-music a{
+    color: #555d53;
+}
+.section-container .db-music .section-title a{
+    color: #f38c00;
+}
+.section .section-container .db-music .left-aside .doubanFM-app,.doubanMusicMan-app{
+    margin-top: 20px;
+}
+.music-app .doubanFM-app .app-icon i{
+    background-position: -249px;
+}
+.music-app .doubanMusicMan-app .app-icon i{
+    background-position: -50px;
+}
+.section .section-container .db-music .right-aside .musicer-rank ul{
+    font-size: 12px;
+    color: #555d53;
+}
+.section .section-container .db-music .right-aside .musicer-rank ul li{
+    margin-bottom: 20px;
+}
+.section .section-container .db-music .right-aside .musicer-rank ul li span{
+    margin-right: 5px;
+    vertical-align: top;
+    position: relative;
+    top: 2px;
+}
+.section .section-container .db-music .right-aside .musicer-rank ul li .img{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.section .section-container .db-music .right-aside .musicer-rank ul li .img .cover{
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 0;
+    background-color: rgba(0, 0, 0, .7);
+    display: none;
+}
+.section .section-container .db-music .right-aside .musicer-rank ul li .img .cover::after{
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 0;
+    background: url(../img/db-music/ic_bg_play.png) no-repeat;
+    background-position: center;
+}
+.section .section-container .db-music .right-aside .musicer-rank ul li .img:hover .cover{
+    display: block;
+}
+.section .section-container .db-music .right-aside .musicer-rank ul li .music-detail{
+    display: inline-block;
+    vertical-align: top;
+    color: #999;
+}
+.section .section-container .db-music .right-aside .musicer-rank ul li .music-detail .music-type{
+    margin: 8px 0 8px 0;
+}
+.section .section-container .db-music .main .main-top{
+    margin-bottom: 20px;
+}
+.section .section-container .db-music .main .main-items li{
+    float: left;
+    width: 132.68px;
+    text-align: center;
+}
+.section .section-container .db-music .main .main-items li img{
+    width: 80px;
+    height: 80px;
+}
+.section .section-container .db-music .main .main-top .main-items .music-title{
+    margin: 5px 0 5px 0;
+}
+.section .section-container .db-music .main .main-top .main-items li .score{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #e09015;
+}
+.section .section-container .db-music .main .main-top .main-items li .score .mus1{
+    background-position: 0 -22px;
+}
+.section .section-container .db-music .main .main-top .main-items li .score .mus2{
+    background-position: 0 -33px;
+}
+.section .section-container .db-music .main .main-top .main-items li .score .mus3{
+    background-position: 0 -33px;
+}
+.section .section-container .db-music .main .main-top .main-items li .score .mus4{
+    background-position: 0 -110px;
+}
+.section .section-container .db-music .main .main-top .main-items li .score .mus5{
+    background-position: 0 -33px;
+}
+.section .section-container .db-music .main .main-top .main-items li .score .mus6{
+    background-position: 0 -55px;
+}
+.section .section-container .db-music .main .main-top .main-items li .score .mus7{
+    background-position: 0 -33px;
+}
+.section .section-container .db-music .main .main-top .main-items li .score .mus8{
+    background-position: 0 -11px;
+}
+.section .section-container .db-music .main .main-bottom .main-items li{
+    height: 110px;
+}
+.section .section-container .db-music .main .main-bottom .main-items li a::after{
+    content: "";
+    display: block;
+    background: url(../img/db-music/timeline-player-cover@2x.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -60px;
+    left: 45px;
+}
+.section .section-container .db-music .main .main-bottom .main-items li .music-title{
+    margin-top: -30px;
+    font-size: 12px;
+}
+
+    /* 豆品 */
+.section .section-container .db-mall .left-aside h2 a{
+    color: #1f9432;
+}
+.section .section-container .db-mall .right-aside .mod{
+    margin-bottom: 30px;
+}
+.section .section-container .db-mall .right-aside .mod a{
+    font-size: 14px;
+}
+.section .section-container .db-mall .right-aside .mod .img{
+    display: inline-block;
+    height: 95px;
+}
+.section .section-container .db-mall .right-aside .mod .img img{
+    width: 265px;
+    height: 95px;
+    margin-bottom: 5px;
+}
+.section .section-container .db-mall .right-aside .mod .img .cover{
+    width: 265px;
+    height: 95px;
+    background-color: rgba(255, 255, 255, .2);
+    position: relative;
+    top: -103px;
+    display: none;
+}
+/* .section .section-container .db-mall .right-aside .mod .active-title{
+    margin-top: -95px;
+} */
+.section .section-container .db-mall .right-aside .mod .group{
+    margin-bottom: 20px;
+}
+.section .section-container .db-mall .right-aside .mod .detail{
+    font-size: 12px;
+    color: #6A6A6A;
+    margin-top: 10px;
+}
+.section .section-container .db-mall .main{
+    margin-bottom: 20px;
+}
+.section .section-container .db-mall .main .main-items li{
+    width: 240px;
+    height: 252px;
+    margin: 0 20px 30px 0;
+}
+.section .section-container .db-mall .main .main-items li a{
+    font-size: 14px;
+}
+.section .section-container .db-mall .main .main-items li .img{
+    width: 240px;
+    height: 220px;
+    display: inline-block;
+}
+.section .section-container .db-mall .main .main-items li a img{
+    width: 240px;
+    height: 220px;
+}
+.section .section-container .db-mall .main .main-items li .detail{
+    margin-top: 8px;
+}
+.section .section-container .db-mall .main .main-items li .detail .price{
+    color: #E55457;
+}
+.section .section-container .db-mall .right-aside .mod .img:hover .cover{
+    display: block;
+}
+.section .section-container .db-mall .main .main-items li .img .cover{
+    width: 240px;
+    height: 220px;
+    background-color: rgba(255, 255, 255, .2);
+    position: relative;
+    top: -222px;
+    display: none;
+}
+.section .section-container .db-mall .main .main-items li .img:hover .cover{
+    display: block;
+}
+
+    /* 豆瓣同城 */
+.section .section-container .db-city a{
+    color: #643;
+}
+.section .section-container .db-city .left-aside h2 a{
+    color: #ec5303;
+}
+.section .section-container .db-city .right-aside .city-items{
+    margin-bottom: 15px;
+}
+.section .section-container .db-city .right-aside .city-items h3{
+    margin-bottom: 3px;
+}
+.section .section-container .db-city .right-aside .city-items h3 a{
+    font-size: 14px;
+    color: #333;
+}
+.section .section-container .db-city .right-aside .city-items h3 a:hover{
+    /* font-size: 14px; */
+    color: #fff;
+}
+.section .section-container .db-city .right-aside .city-items .type-items li{
+    float: left;
+    margin: 3px 13px 0 0;
+}
+.section .section-container .db-city .main .main-items li{
+    width: 260px;
+    height: 100px;
+    margin: 0 0 20px 0;
+    float: left;
+}
+.section .section-container .db-city .main .main-items li .img{
+    display: inline-block;
+    width: 70px;
+    height: 90px;
+    margin: 0 5px 10px 0;
+}
+.section .section-container .db-city .main .main-items li .city-detail{
+    display: inline-block;
+    width: 168px;
+    height: 100px;
+    font-size: 12px;
+    color: #666;
+    vertical-align: top;
+}
+.section .section-container .db-city .main .main-items li .city-detail a{
+    font-size: 13px;
+}
+.section .section-container .db-city .main .main-items li .city-detail div{
+    margin-bottom: 10px;
+}
+
+
+
+
+.footer{
+    font-size: 12px;
+    line-height: 1.5;
+    color: #999;
+    width: 1000px;
+    margin: auto;
+}
+.footer .container{
+    border-top: 1px dashed #dcdcdc;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.footer .left img{
+    width: 15px;
+    vertical-align: middle;
+}
+.footer .left, .footer .right{
+    width: 50%;
+}
+
+.footer .right .menu a{
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.footer .right .menu a:first-child{
+    margin-left: 0;
+}
+
+.footer .adv{
+    width: 150px;
+    margin-top: 20px;
+}
